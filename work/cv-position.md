@@ -9,7 +9,7 @@ permalink: /portfolio/work/cv-position
 # categories: project 
 # progress: 90
 bigimg : "/img/projects/cv-position.jpg"
-tags: Engineering
+tags: mywork
 show-avatar: False
 ---
 

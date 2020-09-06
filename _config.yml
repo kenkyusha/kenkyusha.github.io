@@ -27,9 +27,9 @@ navbar-links:
   # Open Learning: "openlearning"
   Projects: "portfolio"
   Blog:
-    - Personal Finance: "finance"
-    - Travels: "travels"
-    - Hosting: "airbnb"
+    # - Personal Finance: "finance"
+    # - Travels: "travels"
+    # - Hosting: "airbnb"
     - Random: "random"
   Links: "usefullinks"
 
@@ -69,6 +69,7 @@ author:
   github: kenkyusha
   # twitter: fkratzert
   linkedin: arneniitsoo
+  googlescholar: "vUO9EJAAAAAJ"
   # xing: yourname
   # stackoverflow: yourlink
 
@@ -77,12 +78,13 @@ author:
 footer-links-active:
   rss: true
   facebook: false
-  email: true
+  email: false
   twitter: true
   github: true
   linkedin: true
   xing: false
   stackoverflow: false
+  googlescholar: true
 
 
 # Select which share links to show in posts
@@ -91,6 +93,7 @@ share-links-active:
   facebook: true
   google: false
   linkedin: true
+  
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
@@ -147,7 +150,7 @@ defaults:
       show-avatar: true
 
 # Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
-link-tags: false
+link-tags: true
 
 # Exclude these files from production site
 exclude:

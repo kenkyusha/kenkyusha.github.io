@@ -14,7 +14,7 @@ title: "Human Eye-Gaze Tracking"
 # cover-img: {"/img/projects/eye-gaze.jpg" : "blabla"}
 bigimg : "/img/projects/eye-gaze.jpg"
 subtitle: #Things I've worked on.
-tags: Engineering
+tags: mywork
 comments: False
 show-avatar: False
 ---

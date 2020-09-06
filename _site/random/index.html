@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Computer Vision-based positioning</title>
+  <title>Random</title>
 
   <meta name="author" content="Arne Niitsoo" />
 
@@ -60,19 +60,28 @@
   
 
   
-  <meta property="og:title" content="Computer Vision-based positioning" />
+  <meta property="og:title" content="Random" />
   
 
    
-  <meta property="og:description" content="Back in the fall of 2018, while I was working at the Fraunhofer IIS (Nürnberg), I stumbled upon a problem, which one of my collegues was working on. The problem itself called inside-out positioning, where a forklift or other kind of moving autonomous system needs to position itself using the...">
+  <meta property="og:description" content="
+
+{% for post in site.tags.random %}
+
+{{ post.date | date: '%d/%m/%Y' }} ---- {{ post.title }}
+
+
+{% endfor %}
+
+">
   
 
 
   <meta property="og:type" content="website" />
 
   
-  <meta property="og:url" content="http://localhost:4000/portfolio/work/cv-position" />
-  <link rel="canonical" href="http://localhost:4000/portfolio/work/cv-position" />
+  <meta property="og:url" content="http://localhost:4000/random/" />
+  <link rel="canonical" href="http://localhost:4000/random/" />
   
 
   
@@ -86,11 +95,20 @@
   <meta name="twitter:creator" content="@" />
 
   
-  <meta name="twitter:title" content="Computer Vision-based positioning" />
+  <meta name="twitter:title" content="Random" />
   
 
   
-  <meta name="twitter:description" content="Back in the fall of 2018, while I was working at the Fraunhofer IIS (Nürnberg), I stumbled upon a problem, which one of my collegues was working on. The problem itself called inside-out positioning, where a forklift or other kind of moving autonomous system needs to position itself using the...">
+  <meta name="twitter:description" content="
+
+{% for post in site.tags.random %}
+
+{{ post.date | date: '%d/%m/%Y' }} ---- {{ post.title }}
+
+
+{% endfor %}
+
+">
   
 
   
@@ -193,6 +211,14 @@
     </div>
 
 	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <a href="http://localhost:4000 ">
+	      <img class="avatar-img" src="/img/avatar.jpg" />
+		</a>
+	  </div>
+	</div>
+	
 
   </div>
 </nav>
@@ -203,42 +229,15 @@
 
 
 
-  <div id="header-big-imgs" data-num-img=1
-    
-	  
-	  
-	    
-		  data-img-src-1="/img/projects/cv-position.jpg"
-		
-	  
-    
-  ></div>
 
-
-<header class="header-section has-img">
-
-<div class="big-img intro-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="page-heading">
-          <h1>Computer Vision-based positioning</h1>
-		  
-		  
-		  
-        </div>
-      </div>
-    </div>
-  </div>
-  <span class='img-desc'></span>
-</div>
+<header class="header-section ">
 
 <div class="intro-header no-img">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="page-heading">
-          <h1>Computer Vision-based positioning</h1>
+          <h1>Random</h1>
 		  
 		  
 		  
@@ -256,16 +255,13 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
     <!-- <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"> -->
-      <p>
-  Back in the fall of 2018, while I was working at the Fraunhofer IIS (Nürnberg), I stumbled upon a problem, which one of my collegues was working on. The problem itself called inside-out positioning, where a forklift or other kind of moving autonomous system needs to position itself using the RGB cameras and perhaps additional information from other sensors. <a href="https://www.mad.tf.fau.de/files/2018/07/Evaluation-Criteria-for-Inside-Out-Indoor-Positioning-Systems-based-on-Machine-Learning.pdf" target="_blank">(read more here).</a> 
+      <!-- blalbvla -->
 
-</p>
+<!-- <h2>Bienvenue, Welcome, Wilkommen, Tere tulemast!</h2> -->
+<li><a href="http://localhost:4000/2020/09/05/Bienvenue.html" title="Bienvenue, Welcome, Wilkommen, Tere tulemast!">05/09/2020 ---- Bienvenue, Welcome, Wilkommen, Tere tulemast!</a></li>
+<!-- <a href="/2020/09/05/Bienvenue.html"> -->
+<!-- <time>2020-09-05 22:24:00 +0200</time> -->
 
-<p>My previous employer (current at that time), Fraunhofer, published the datasets for this problem and was wondering how come the network did not manage to get good accuracy measures.</p>
-
-<p>More content to be added!</p>
-
-<p>Check out more at my <a href="https://github.com/kenkyusha/cv_position" target="_blank">github page.</a></p>
 
 	    
     </div>
