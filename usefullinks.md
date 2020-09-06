@@ -2,10 +2,10 @@
 # layout: page
 layout: page
 # tags: portfolio
-# permalink: /portfolio/
+permalink: /usefullinks/
 title: Links #Portfolio
 subtitle: Here are some stuff I found useful...
-published: False
+published: True
 # js:
 # - js/util_buttons.js
 ---
@@ -18,5 +18,5 @@ published: False
 * <a href="https://www.youtube.com/user/numberphile" target="_blank">Numberphile</a>
 
 
-## Subject 2
-  Check out more at my <a href="https://github.com/kenkyusha/eyeGazeToScreen" target="_blank">github page.</a>
+<!-- ## Subject 2
+  Check out more at my <a href="https://github.com/kenkyusha/eyeGazeToScreen" target="_blank">github page.</a> -->
