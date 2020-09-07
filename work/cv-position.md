@@ -2,7 +2,7 @@
 layout: page # post-wide
 hero-bg-color: "#fff" #"#000"  #BLACK
 # uid: cv-position #this tag is the image tag basically
-title:  "Computer Vision-based positioning" # appearing title
+title:  "Computer Vision-based Positioning" # appearing title
 permalink: /portfolio/work/cv-position
 # worktype: "Engineering" # category displayed under the stuff
 # date:   2020-09-03 14:35:01

@@ -6,12 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Projects</title>
+  <title>Video-Image Content Understanding</title>
 
   <meta name="author" content="Arne Niitsoo" />
 
-  
-  <meta name="description" content="Things I've worked on.">
   
 
   <link rel="alternate" type="application/rss+xml" title="Arne's website - A virtual proof that name is awesome!" href="/feed.xml" />
@@ -62,19 +60,19 @@
   
 
   
-  <meta property="og:title" content="Projects" />
+  <meta property="og:title" content="Video-Image Content Understanding" />
   
 
    
-  <meta property="og:description" content="Things I've worked on.">
+  <meta property="og:description" content="In the late summer of 2019, while I was visiting my cousins in Portland, Oregon and travelling across the west coast of USA through California I had a bit of unluck travelling between San Fransisco (SF) and San Diego (SD). As my rideshare cancelled the night before I was supposed...">
   
 
 
   <meta property="og:type" content="website" />
 
   
-  <meta property="og:url" content="http://localhost:4000/portfolio/" />
-  <link rel="canonical" href="http://localhost:4000/portfolio/" />
+  <meta property="og:url" content="http://localhost:4000/portfolio/work/video-content" />
+  <link rel="canonical" href="http://localhost:4000/portfolio/work/video-content" />
   
 
   
@@ -88,11 +86,11 @@
   <meta name="twitter:creator" content="@" />
 
   
-  <meta name="twitter:title" content="Projects" />
+  <meta name="twitter:title" content="Video-Image Content Understanding" />
   
 
   
-  <meta name="twitter:description" content="Things I've worked on.">
+  <meta name="twitter:description" content="In the late summer of 2019, while I was visiting my cousins in Portland, Oregon and travelling across the west coast of USA through California I had a bit of unluck travelling between San Fransisco (SF) and San Diego (SD). As my rideshare cancelled the night before I was supposed...">
   
 
   
@@ -195,14 +193,6 @@
     </div>
 
 	
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-	    <a href="http://localhost:4000 ">
-	      <img class="avatar-img" src="/img/avatar.jpg" />
-		</a>
-	  </div>
-	</div>
-	
 
   </div>
 </nav>
@@ -221,12 +211,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="page-heading">
-          <h1>Projects</h1>
-		  
-		    
-            <hr class="small">
-            <span class="page-subheading">Things I've worked on.</span>
-			
+          <h1>Video-Image Content Understanding</h1>
 		  
 		  
 		  
@@ -244,20 +229,36 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
     <!-- <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"> -->
-      <h2 id="human-eye-gaze-tracking">Human Eye-gaze Tracking</h2>
-<!-- [click here](work/eye-gaze) -->
-<p><a href="work/eye-gaze"><img src="/img/projects/eye-gaze.jpg" alt="Gaze-tracking" /></a>
-<!-- [![Gaze-tracking](/img/projects/eye-gaze.jpg)](http://commonmark.org "Redirect to homepage") --></p>
+      <p>
+  In the late summer of 2019, while I was visiting my cousins in Portland, Oregon and travelling across the west coast of USA through California I had a bit of unluck travelling between San Fransisco (SF) and San Diego (SD). As my rideshare cancelled the night before I was supposed to travel from SF-SD, I was in a bit of trouble. Looking through various options and finally as I was about to pick up a rental car the airport somebody called me and offered to pick me up and take me to LA if I am willing to drive. As we were driving, he explained the business he was building and that he might look for a ML engineer to work as a freelance contractor.
+</p>
 
-<h2 id="computer-vision-based-positioning">Computer Vision-based Positioning</h2>
-<p><a href="work/cv-position"><img src="/img/projects/cv-position.jpg" alt="CV-Positioning" /></a></p>
+<h2 id="object-detection">Object Detection</h2>
+<p>Using <a href="https://pjreddie.com/darknet/" target="_blank">pjreddie’s darknet</a> architecture and the pretrained model of <a href="https://www.youtube.com/watch?v=MPU2HistivI&amp;" target="_blank">Yolov3 (You-Only-Look-Once)</a>. I build a image and video classification pipeline, which ran the corresponding images through the network and yielded the most predominant objects, as they were appearing more in the image or in the video.</p>
 
-<h2 id="video-image-content-understanding">Video-Image Content Understanding</h2>
-<p><a href="work/video-content"><img src="/img/projects/vidcont/1.jpg" alt="Content-understanding" /></a></p>
+<h2 id="video-action-detection">Video-Action Detection</h2>
+<p><img src="https://github.com/NVlabs/STEP/blob/master/example.gif?raw=true" alt="NVIDIA-STEP" /></p>
 
-<h2 id="multi-sensor-data-acquisition-platform">Multi-Sensor Data-Acquisition Platform</h2>
+<p>Detecting and classifying actions in videos is complicated, the networks are huge and the datasets limited. It is not as straight forward as object detection and classification in images as a lot of information comes from the temporal flow of the activities and actions happening. Luckily the <a href="https://github.com/NVlabs/STEP" target="_blank">NVIDIA-STEP</a></p>
 
-<h2 id="radiowave-based-positioning">Radiowave-based Positioning</h2>
+<h2 id="speech-transcription">Speech Transcription</h2>
+<p>Another interesting point for content understanding is the speech! The speech in a video gives us even more relevant information, what is the mood, the subject, the activity and more contextual knowledge of what currently is happening.</p>
+
+<div style="text-align:center"><img src="/img/projects/vidcont/2.png" /></div>
+
+<p>This part luckily powerful speech transcription API-s are already available either from Amazon, Microsoft and Google. I personally used Google for this part as my work platform was anyways set up using the Google Cloud Platform (GCP). 
+The steps, are pretty straight forward, first extracting the audio from videos, then setting up the <a href="https://cloud.google.com/speech-to-text" target="_blank">Google Speech-to-text API</a>, which then retrives you the list of concatenated strings of the words it managed to recognize.</p>
+
+<h2 id="text-summarization">Text summarization</h2>
+<p>(Talk about abstractive and extractive summarization)</p>
+
+<h2 id="challenges">Challenges</h2>
+<p>The hardest part about this project was definetly getting the hang of video-action detection part. There is a lot of research done recently and some of the work is publicly available, while the most powerful models either were in the process of being published or waiting to be accepted to the conferences.
+Another big challenge was making it all run in an parallel manner. This meant that first the audio had to be extracted from the video, then the video converted into images, which was then fed into object detection pipeline and action-detection pipeline at the same time. Using multiprocessing and some designs tricks, all the processes could be ran in parallel.</p>
+
+<div style="text-align:center"><img src="/img/projects/vidcont/1.jpg" /></div>
+
+<p>Check out more at <a href="https://video.io" target="_blank">this page.</a></p>
 
 	    
     </div>
