@@ -21,5 +21,6 @@ subtitle: Things I've worked on.
 [![Content-understanding](/img/projects/vidcont/1.jpg)](work/video-content)
 
 ## Multi-Sensor Data-Acquisition Platform
+[![Content-understanding](/img/projects/dap/1.jpg)](work/dap)
 
 ## Radiowave-based Positioning
