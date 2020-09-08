@@ -35,11 +35,11 @@ One of the benefits of having a camera sensor is that, there is already bunch of
 ## Demo Platform
 Since there are only limited computational resources available. Instead of using the all of the cameras, for deployment only one camera together with lidar and radar are used. This is sufficient in terms of what we want to achieve, namely to detect what is in front of the autonomous system, using a neural network based object detector (<a href="https://github.com/chuanqi305/ssd" target="_blank">Single Shot Detector</a> running at 15FPS on Jetson TX2), classify it and track it. And as soon as, there is a detection of a person, we track them until they have left the operational zone of the platform using the data points in lidar and radar domains.
 
-<div style="text-align:center"><img src="/img/projects/dap/towards_dap.gif" width="100%"/></div>
+<div style="text-align:center"><img src="/img/projects/dap/towards_dap_big.gif" width="100%"/></div>
 
 Above we can see, the detection in the camera domain, which initiates the  tracking the points in the lidar domain. In this example, we can see how the system works walking towards and backwards from the sensor. In the lidar domain even the static points are flickering (makes the problem bit harder), but as we can see the points associated with the person are clearly distinguishable. Observing the radar domain, we can see the red dots moving closer and further away on the waterfall plot.
 
-<div style="text-align:center"><img src="/img/projects/dap/out_fov.gif" width="100%"/></div>
+<div style="text-align:center"><img src="/img/projects/dap/out_fov_big.gif" width="100%"/></div>
 
 In the gif above, we can see the person being tracked in the camera field of view and at the same time in the lidar and radar domain. Notice, how the tracking persist in the lidar and radar domain after the person has already left the camera field of view. 
 
