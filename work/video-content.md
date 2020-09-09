@@ -7,7 +7,7 @@ title: "Video-Image Content Understanding"
 # bigimg: "https://github.com/NVlabs/STEP/blob/master/example.gif"
 subtitle: #Things I've worked on.
 tags: mywork
-comments: False
+comments: True
 show-avatar: False
 # published: True
 ---

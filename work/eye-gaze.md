@@ -9,10 +9,10 @@ layout: page
 permalink: /portfolio/work/eye-gaze
 title: "Human Eye-Gaze Tracking"
 # cover-img: {"/img/projects/eye-gaze.jpg" : "blabla"}
-bigimg : "/img/projects/eye-gaze.jpg"
+bigimg : "/img/projects/gaze/eye-gaze.jpg"
 subtitle: #Things I've worked on.
 tags: mywork
-comments: False
+comments: True
 show-avatar: False
 ---
 

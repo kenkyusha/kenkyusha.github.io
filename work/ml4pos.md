@@ -1,14 +1,14 @@
 ---
 layout: page
 # tags: portfolio
-permalink: /portfolio/work/dap
-title: "Multi-Sensor Data Acquisition Platform"
-bigimg : "/img/projects/dap/2.jpg"
+permalink: /portfolio/work/mlpos
+title: "CNN-based Position Estimation"
+bigimg : "/img/projects/mlpos/11.jpg"
 subtitle: #Things I've worked on.
 tags: mywork
 comments: True
 show-avatar: False
-# published: True
+published: False
 ---
 
 <p>
