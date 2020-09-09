@@ -24,8 +24,9 @@ subtitle: Things I've worked on.
 [![DAP](/img/projects/dap/1.jpg)](work/dap)
 
 ## CNN-based Position Estimation
-<!-- <div style="text-align:center"><img src="/img/projects/dap/out_fov_big.gif" width="100%"/></div> -->
 <a href="work/mlpos">
-<img src="/img/projects/mlpos/11.jpg" alt="mlpos"> 
+<img src="/img/projects/mlpos/11.jpg" alt="mlpos" width="100%"> 
 </a>
-<!-- [![MLPOS](/img/projects/mlpos/1.jpg)](work/mlpos) -->
+
+<!-- ## Soft Decision Trees for Singing Voice Detection -->
+<!-- [![MLPOS](/img/projects/mlpos/11.jpg)](work/mlpos) -->

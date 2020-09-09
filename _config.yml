@@ -30,7 +30,7 @@ navbar-links:
     # - Personal Finance: "finance"
     # - Travels: "travels"
     # - Hosting: "airbnb"
-    - Random: "random"
+    - Random: "tag/random"
   Links: "usefullinks"
 
 #  Resources:

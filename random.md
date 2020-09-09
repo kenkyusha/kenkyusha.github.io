@@ -1,6 +1,7 @@
 ---
 layout: page
-permalink: /random/
+# permalink: /random/
+permalink: tag/random
 title: Random #Portfolio
 # subtitle: Things I've worked on.
 ---
