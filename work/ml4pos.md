@@ -20,7 +20,7 @@ Above we can see a demonstrator platform built for the Mobile World Congress Bar
 
 <div style="text-align:center"><img src="/img/projects/mlpos/2.png" size="100%"/></div>
 
-In the figure above, we can see plot of a received channel impulse response with direct line-of-sight (in blue) and one with multipath reflections (in red). The the conventional signal processing chain tries to find the time-of-arriva (TOA), which is the peak i.e. the maximum of the signal and disregards everything else. This works well, if we have direct line-of-sight and clear signal as we see above colored in blue. However, in the case of signal reflections, scattering, multipath and other non-linear effects the received signal has several peaks and it is harder to tell which one of them is the correct TOA. The information around the peaks is completly ignored, which actually could carry a lot of additional information regarding the effects we experience on the signal.
+In the figure above, we can see plot of a received channel impulse response with direct line-of-sight (in blue) and one with multipath reflections (in red). The the conventional signal processing chain tries to find the time-of-arriva (TOA), which is the peak i.e. the maximum of the signal and disregards everything else. This works well, if we have direct line-of-sight and clear signal as we see above colored in blue. However, in the case of signal reflections, scattering, multipath and other non-linear effects the received signal has several peaks and it is harder to tell which one of them is the correct TOA. The information around the peaks, denoted with green circles, is completly ignored, which actually could carry a lot of additional information regarding the effects we experience on the signal.
 
 ## Data Processing
 <div style="text-align:center"><img src="/img/projects/mlpos/3.png" size="100%"/></div>
@@ -63,7 +63,8 @@ LOS (CNN)| 0.154 m | 0.146 m | 0.283 m |
 The results show that, the model learned from channel impulse response signals performs very similarly with the conventional signal processing methodology. In the case of multipath, the CNN (our trained model) is superior as it has learned how to deal with signals experiencing heavy non-linear effects.
 
 ## Conclusions
-This was the first project on which I worked after joining Fraunhofer IIS in Nürnberg. It was also one with most accomplishments (2 publications, 1 best paper award and demonstrator at the MWC). Working on this project, I learned a lot about radiowave-based positioning in terms of theory and practise. Furthermore, I gained very good intuition working with convolutional neural networks not only training them but also to design them.
+This was the first project on which I worked after joining Fraunhofer IIS in Nürnberg. It was also one with most accomplishments (2 publications, 1 best paper award and demonstrator at the MWC). Working on this project, I learned a lot about radiowave-based positioning in terms of theory and practise. 
+Furthermore, I gained very good intuition in designing and training convolutional neural networks.
 
 More details in the publications listed below!
 ## Publications

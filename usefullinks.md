@@ -22,5 +22,15 @@ published: True
 * <a href="http://neuralnetworksanddeeplearning.com" target="_blank">Neural Networks and Deep Learning</a>
 * <a href="https://www.deeplearningbook.org" target="_blank">Deep Learning Book</a>
 
+## Open Source
+* <a href="https://github.com/deepmind" target="_blank">Deepmind</a>
+* <a href="https://github.com/facebookresearch" target="_blank">Facebook 
+research</a>
+* <a href="https://github.com/NVlabs" target="_blank">NVIDIA Labs </a>
+* <a href="https://github.com/BMW-InnovationLab" target="_blank">BMW InnovationLab</a>
+* <a href="https://github.com/huggingface" target="_blank">Huggingface: NLP</a>
+
+
+
 <!-- ## Subject 2
   Check out more at my <a href="https://github.com/kenkyusha/eyeGazeToScreen" target="_blank">github page.</a> -->
