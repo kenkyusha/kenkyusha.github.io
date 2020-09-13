@@ -7,6 +7,17 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>W37 update, progress, forward...</title>
+        <description>
+          
+          This week I’ve almost completed filling the portfolio page with various projects that I’ve worked on. I must admit, this this process of structuring and organizing was quite enjoyable in the beginning, but as time passed, I started to mistakes. This became quite exhausting, that after filling out the final...
+        </description>
+        <pubDate>Sun, 13 Sep 2020 23:24:00 +0200</pubDate>
+        <link>http://localhost:4000/2020/09/13/w37_update.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/09/13/w37_update.html</guid>
+      </item>
+    
+      <item>
         <title>Bienvenue, Welcome, Wilkommen, Tere tulemast!</title>
         <description>
           
