@@ -28,5 +28,10 @@ subtitle: Things I've worked on.
 <img src="/img/projects/mlpos/11.jpg" alt="mlpos" width="100%"> 
 </a>
 
+## Stacked AutoEncoder
+<a href="work/sae">
+<img src="/img/projects/sae/0.svg" alt="saec" width="100%"> 
+</a>
+
 <!-- ## Soft Decision Trees for Singing Voice Detection -->
 <!-- [![MLPOS](/img/projects/mlpos/11.jpg)](work/mlpos) -->
