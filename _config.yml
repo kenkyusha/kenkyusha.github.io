@@ -66,7 +66,7 @@ navbar-col: "orange" #"yellow" #"orange"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Arne Niitsoo
-  # email: "f.kratzert@gmail.com"
+  email: "arkmind@pm.me"
   github: kenkyusha
   # twitter: fkratzert
   linkedin: arneniitsoo
@@ -79,7 +79,7 @@ author:
 footer-links-active:
   rss: true
   facebook: false
-  email: false
+  email: true
   twitter: true
   github: true
   linkedin: true
