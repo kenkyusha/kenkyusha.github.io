@@ -6,10 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>404 - Page not found</title>
+  <title>Contact me!</title>
 
   <meta name="author" content="Arne Niitsoo" />
 
+  
+  <meta name="description" content="Ideas | Inquiries | Proposals | Consulations">
   
 
   <link rel="alternate" type="application/rss+xml" title="Arne's website - A virtual proof that name is awesome!" href="/feed.xml" />
@@ -60,26 +62,19 @@
   
 
   
-  <meta property="og:title" content="404 - Page not found" />
+  <meta property="og:title" content="Contact me!" />
   
 
    
-  <meta property="og:description" content="
-  Whoops, this page doesn't exist.
-  Move along. (404 error)
-  
-
-  
-
-">
+  <meta property="og:description" content="Ideas | Inquiries | Proposals | Consulations">
   
 
 
   <meta property="og:type" content="website" />
 
   
-  <meta property="og:url" content="http://localhost:4000/404" />
-  <link rel="canonical" href="http://localhost:4000/404" />
+  <meta property="og:url" content="http://localhost:4000/contactme" />
+  <link rel="canonical" href="http://localhost:4000/contactme" />
   
 
   
@@ -93,18 +88,11 @@
   <meta name="twitter:creator" content="@" />
 
   
-  <meta name="twitter:title" content="404 - Page not found" />
+  <meta name="twitter:title" content="Contact me!" />
   
 
   
-  <meta name="twitter:description" content="
-  Whoops, this page doesn't exist.
-  Move along. (404 error)
-  
-
-  
-
-">
+  <meta name="twitter:description" content="Ideas | Inquiries | Proposals | Consulations">
   
 
   
@@ -234,18 +222,113 @@
 </nav>
 
 
-    <div class="intro-header"></div>
+    <!-- TODO this file has become a mess, refactor it -->
 
-<div role="main" class="container">
-  <div class="text-center">
-  <h1>Whoops, this page doesn't exist.</h1>
-  <h1>Move along. (404 error)</h1>
-  <br/>
 
-  <img src="/img/404-southpark.jpg" />
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-heading">
+          <h1>Contact me!</h1>
+		  
+		    
+            <hr class="small">
+            <span class="page-subheading">Ideas | Inquiries | Proposals | Consulations</span>
+			
+		  
+		  
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <!-- <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"> -->
+      <p>Over the years I’ve worked on different projects covering different machine learning fields. Obviously the field has exploded there have been every year so many new developments that it feels it’s really hard to be specialist in all of them but rather specialize.</p>
+
+<p>First the amount of computation data available and labeled datasets gave birth to boom in supervised learning which till today has been one of the most used throughout industry and also in academics. However, for more complex problems more adaptable ways of learning have to be employed such as unsupervised learning and reinforcement learning. Reinforcement learning has many advantages over supervised learning. One of them being that we do not really need a labeled dataset in order to train a model. Unfortunately, desiging a good reward system and training a model is much more complicated. Every supervised learning problem can be turned into a reinforcment learning problem, and this is where mostly people start and later they would eventually go for reinforcement learning.</p>
+
+<p>If you have already reached this page and decided to read those lines, then maybe you are interested to talk with me. Whether it is a simple classifier for image detection or something related to natural language processing. On my <a href="portfolio/">project</a> page you can get idea of what I’ve worked on so far but here they are:</p>
+
+<ul>
+  <li>Image/video analysis
+    <ul>
+      <li>Find out what is in the image?</li>
+      <li>Video action detection</li>
+      <li>Image classification/regression - if you have the data I can make you a PoC!</li>
+    </ul>
+  </li>
+  <li>Eye-Gaze tracking
+    <ul>
+      <li>Where the person is looking?</li>
+      <li>Are they confident (eye movement directions)?</li>
+    </ul>
+  </li>
+  <li>Text semantic Analysis (NLP)
+    <ul>
+      <li>Google Transcribe API-s</li>
+      <li>Training transformer models for language modelling</li>
+    </ul>
+  </li>
+  <li>Automatic data labeling tools
+    <ul>
+      <li>If you have a lot of data to be labeled?</li>
+      <li>This could be done automatically, or atleast the tools developed for that</li>
+      <li>Active learning possibilities</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Do not hesitate to contact me!</p>
+
+<!-- 
+<form method="POST" action="https://formspree.io/f/xaylbbdb">
+  <input type="text" name="name" placeholder="Your name">
+  <input type="email" name="email" placeholder="Your email">
+  <input type="text" name="subject" placeholder="Subject">
+  <textarea name="message" placeholder="Message" rows="10">
+  </textarea>
+  <button type="submit">Send Message</button>
+</form> -->
+
+<form action="https://formspree.io/f/xaylbbdb" method="POST">
+  <fieldset>
+      <!-- <label for="name">Your name</label><br> -->
+      <input type="text" name="name" placeholder="Name" required="" />
+  </fieldset>
+  <fieldset>
+      <!-- <label for="_replyto">Your email</label><br> -->
+      <input type="email" name="_replyto" placeholder="example@domain.com" required="" />
+  </fieldset>
+  <fieldset>
+      <!-- <label for="message">Your message</label><br> -->
+      <textarea name="message" rows="10" placeholder="Message" required=""></textarea>
+  </fieldset>
+  <input class="hidden" type="text" name="_gotcha" style="display:none" />
+  <input class="hidden" type="hidden" name="_subject" value="Message via http://domain.com" />
+
+  <input class="button submit" type="submit" value="Send" />
+</form>
+
+	    
+    </div>
+  </div>
 </div>
 
-</div>
 
     <footer>
   <div class="container beautiful-jekyll-footer">

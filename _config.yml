@@ -24,6 +24,7 @@ description: A virtual proof that name is awesome!
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
+  Contact: 'contactme'
   # Open Learning: "openlearning"
   Projects: "portfolio"
   Blog:
@@ -99,7 +100,7 @@ share-links-active:
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
 url-pretty: "arneniitsoo.com"  # eg. "deanattali.com/beautiful-jekyll"
-
+form-spring: "xaylbbdb"
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
 disqus: "kenkyusha"

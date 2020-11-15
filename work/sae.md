@@ -30,6 +30,6 @@ When the weights are initialized they train the network with features extracted 
 ## Training loss
 The result of this architecture should be a staircase of training and validation loss, where after each addition of new layer the error jumps downwards as described in the paper.
 
-<div style="text-align:center"><img src="/img/projects/sae/2.png" size="100%"/></div>
+<div style="text-align:center"><img src="/img/projects/sae/2.png" width="150%"/></div>
 
 Check out more at my <a href="https://github.com/kenkyusha/SAE" target="_blank">github page</a> and the <a href="https://github.com/kenkyusha/SAE/blob/master/example.ipynb" target="_blank">notebook example.</a> 
