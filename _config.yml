@@ -27,11 +27,11 @@ navbar-links:
   Contact: 'contactme'
   # Open Learning: "openlearning"
   Projects: "portfolio"
-  Blog:
+  # Blog:
     # - Personal Finance: "finance"
     # - Travels: "travels"
     # - Hosting: "airbnb"
-    - Random: "tag/random"
+    # - Random: "tag/random"
   Links: "usefullinks"
 
 #  Resources:
