@@ -6,7 +6,7 @@ subtitle: Machine Learning Engineer | Data Scientist | AI Generalist
 
 profile:
   align: right
-  image: profile.jpg
+  image: profile.JPG
   image_circular: false # crops the image to make it circular
   address: >
     <p>Currently located: Paris, France</p>
