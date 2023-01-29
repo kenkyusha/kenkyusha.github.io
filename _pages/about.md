@@ -16,6 +16,17 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
+<h1>Per aspera ad astra</h1>
+
+<p>
+    🎓 MSc thesis in using Soft Decision Trees for classification (FAU)<br>
+    🛠️ 7+ years of work experience in ML|DS|DL<br>
+    🎭 Senior ML engineer, Lead engineer, Product Manager<br>
+    🚀 Published: IPIN2018 (best paper), Sensors 2019<br>
+    🚀 Carrier Focused Selling: pilot increasing sales over 25%<br>
+    🚀 Price Prediction Algorithm: feature dev, adaptive data selection<br>
+    ⚙️ At least once per week you can find me: bouldering, skating, dancing<br>
+</p>
 
 <h1>In vino veritas</h1>
 
