@@ -22,9 +22,10 @@ social: true  # includes social icons at the bottom of the page
     🎓 MSc thesis in using Soft Decision Trees for classification (FAU)<br>
     🛠️ 7+ years of work experience in ML|DS|DL<br>
     🎭 Senior ML engineer, Lead engineer, Product Manager<br>
-    🚀 Published: IPIN2018 (best paper), Sensors 2019<br>
+    👾 Fraunhofer - publications IPIN2018 (best paper), Sensors 2019<br>
+    👾 Ubisoft - Using LLMs for information retrieval and ranking (NLP)<br>
+    👾 Sennder - Price Prediction Algorithm<br>
     🚀 Carrier Focused Selling: pilot increasing sales over 25%<br>
-    🚀 Price Prediction Algorithm: feature dev, adaptive data selection<br>
     ⚙️ At least once per week you can find me: bouldering, skating, dancing<br>
 </p>
 
