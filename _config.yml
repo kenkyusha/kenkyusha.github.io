@@ -8,11 +8,11 @@ middle_name:
 last_name: Niitsoo
 email: 
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Arne Niitsoo's personal web site at http://kenkyusha.github.io/.
+  Arne Niitsoo's personal web site covering projects in machine learning, AI, deep learning, computer vision and a bit of large language models.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: data science, machine learning, deep learning, recommendation systems  # add your own keywords or leave empty
+keywords: data science, machine learning, deep learning, recommendation systems, large language models, LLM, computer vision # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
