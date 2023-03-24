@@ -29,7 +29,7 @@ social: true  # includes social icons at the bottom of the page
     ⚙️ At least once per week you can find me: bouldering, skating, dancing<br>
 </p>
 
-<h1>Journey in the Machine Learning</h1>
+<h1>How my journey began...</h1>
 
 <p> I first discovered the world of machine learning during my studies in Germany at the <a href="https://www.fau.eu">Friedrich-Alexander University</a>.
     I stumbled upon the ImageNet competition and was amazed by the winning work called GoogLeNet. 
