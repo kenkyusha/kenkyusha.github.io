@@ -2,17 +2,17 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Human Interface between the Machine and the Real World | Arne Niitsoo # the website title (if blank, full name will be used instead)
 first_name: Arne
 middle_name:
 last_name: Niitsoo
 email: 
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Arne Niitsoo's personal web site covering projects in machine learning, AI, deep learning, computer vision and a bit of large language models.
+  At the intersection of machine learning and human-centered design, I am passionate about creating intelligent systems that bridge the gap between humans and technology. With 7 years of experience in the field, I have honed my skills in designing machine learning algorithms that interact with the real world in a natural and intuitive way. From autonomous vehicles to smart homes, my projects demonstrate the power of machine learning in enhancing our lives and solving real-world problems.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: data science, machine learning, deep learning, recommendation systems, large language models, LLM, computer vision # add your own keywords or leave empty
+keywords: data science, machine learning, deep learning, recommendation systems, natural language processing, large language models, LLM, computer vision, python, pytorch, tensorflow, fintech, healthtec, medtech # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
