@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Arne Niitsoo | GenAI <> Machine Learning Specialist # the website title (if blank, full name will be used instead)
+title: Arne Niitsoo | GenAI Specialist # the website title (if blank, full name will be used instead)
 first_name: Arne
 middle_name:
 last_name: Niitsoo
@@ -10,9 +10,9 @@ email:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Explore the projects and expertise of Arne Niitsoo, a machine learning specialist, founder and GenAI enthusiast. I can help you with conversational AI, prompting strategies, model training / tuning and domain specific data generation for your large language models (LLM).
 
-#footer_text: >
- # Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  #Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+footer_text: >
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: data science, machine learning, deep learning, recommendation systems, natural language processing, semantic similarity, information retrieval, large language models, LLM, computer vision, python, pytorch, tensorflow, fintech, healthtec, medtech, conversational AI # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)

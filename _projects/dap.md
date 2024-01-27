@@ -4,6 +4,7 @@ layout: page
 permalink: /portfolio/work/dap
 title: "Multi-Sensor Data Acquisition Platform"
 img : "/assets/img/projects/dap/2.jpg"
+description: We found cost-effective alternatives to expensive sensors like Velodyne Lidar by using LIDAR, RADAR, and cameras. Our 360-degree camera setup, Jetson TX2, and neural networks made data gathering efficient, leading to a real-time object detection and tracking platform
 subtitle: #Things I've worked on.
 tags: mywork
 comments: True

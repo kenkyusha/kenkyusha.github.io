@@ -4,6 +4,7 @@ layout: page
 permalink: /portfolio/work/sae
 title: "Stacked AutoEncoder"
 img : "https://upload.wikimedia.org/wikipedia/commons/3/37/Autoencoder_schema.png"
+description: Inspired by research on 'Deep Neural Network Based Instrument Extraction From Music,' I explored SAEs to efficiently encode data. SAEs are neural networks that reduce layer size to create efficient encodings. I trained them in a unique way, starting with 1 layer and adding more, preserving initial weights. The architecture resulted in a staircase of training and validation loss.
 subtitle: #Things I've worked on.
 tags: mywork
 comments: True
@@ -15,7 +16,7 @@ Implementing a stacked autoencoder was one of the first projects I worked as I d
 
 ## Autoencoder
 
-<div style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Autoencoder_schema.png" width="50%"/></div>
+<div style="text-align:center; background-color: white;"><img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Autoencoder_schema.png" width="50%"/></div>
 
 An autoencoder is a type of neural network, which usually is used to learn an efficient encoding. The way it works is that layer after layer the number of neurons each later is reduced to a desired size after which the encoding process starts, which tries to reconstruct the input signal.
 <a href="https://en.wikipedia.org/wiki/Autoencoder" target="_blank">Read more about it here.</a>
@@ -28,7 +29,11 @@ In the [paper](http://150.162.46.34:8080/icassp2015/pdfs/0002135.pdf), they desc
 
 When the weights are initialized they train the network with features extracted from audio frame of combination different musical instruments and target being the features of a single instrument (piano, drums, guitar, ...). This one layer network, is trained for certain epochs after, which another layer is added to the network, its weights again initialized while preserving the first layer weights. The network is trained again and this process is repeated till **depth + 1** times.
 
-<div style="text-align:center"><img src="/assets/img/projects/sae/0.svg" size="100%"/></div>
+<!-- <div style="text-align:center"><img src="/assets/img/projects/sae/0.svg" size="100%"/></div> -->
+<div style="text-align:center; background-color: white;">
+  <img src="/assets/img/projects/sae/0.svg" width="100%" />
+</div>
+
 <br>
 
 ## Training loss

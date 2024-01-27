@@ -4,7 +4,9 @@ hero-bg-color: "#fff" #"#000"  #BLACK
 title:  "Computer Vision - based Position Estimation" # appearing title
 permalink: /portfolio/work/cv-position
 img : "/assets/img/projects/cvpos/cv-position.jpg"
+description: In 2018 at Fraunhofer IIS, I improved inside-out positioning using cameras. Enhanced image processing, simplified CNN architecture, and achieved impressive results, reducing MAE, CEP, and CE95. #ComputerVision #Positioning
 tags: mywork
+
 show-avatar: False
 comments: True
 category: fun
@@ -55,13 +57,45 @@ Following are the results testing with the cross dataset:
 
 From left to right, sys4, sys5, sys6 - these depict the orientation of the camera on the forklift (i.e. which direction the camera is facing).
 
-Implemenatation | MAE    | CEP    | CE95   | deg (CEP)
---------------- | ------ | -------| ------ | ---------
-Cross (original)| 1.08 m | 0.86 m | 3.06 m | 0.18 ° 
-smallNet (sys4) | 0.35 m | 0.30 m | 0.74 m | 0.10 °
-smallNet (sys5) | 0.37 m | 0.35 m | 0.71 m | 0.04 °
-smallNet (sys7) | 0.59 m | 0.43 m | 1.48 m | 0.03 °
+<table style="border-collapse: collapse; width: 80%; margin: 0 auto; text-align: center;">
+  <tr>
+    <th style="border: 2px solid black; padding: 8px;">Implementation</th>
+    <th style="border: 2px solid black; padding: 8px;">MAE</th>
+    <th style="border: 2px solid black; padding: 8px;">CEP</th>
+    <th style="border: 2px solid black; padding: 8px;">CE95</th>
+    <th style="border: 2px solid black; padding: 8px;">deg (CEP)</th>
+  </tr>
+  <tr>
+    <td style="border: 2px solid black; padding: 8px;">Cross (original)</td>
+    <td style="border: 2px solid black; padding: 8px;">1.08 m</td>
+    <td style="border: 2px solid black; padding: 8px;">0.86 m</td>
+    <td style="border: 2px solid black; padding: 8px;">3.06 m</td>
+    <td style="border: 2px solid black; padding: 8px;">0.18 °</td>
+  </tr>
+  <tr>
+    <td style="border: 2px solid black; padding: 8px;">smallNet (sys4)</td>
+    <td style="border: 2px solid black; padding: 8px;">0.35 m</td>
+    <td style="border: 2px solid black; padding: 8px;">0.30 m</td>
+    <td style="border: 2px solid black; padding: 8px;">0.74 m</td>
+    <td style="border: 2px solid black; padding: 8px;">0.10 °</td>
+  </tr>
+  <tr>
+    <td style="border: 2px solid black; padding: 8px;">smallNet (sys5)</td>
+    <td style="border: 2px solid black; padding: 8px;">0.37 m</td>
+    <td style="border: 2px solid black; padding: 8px;">0.35 m</td>
+    <td style="border: 2px solid black; padding: 8px;">0.71 m</td>
+    <td style="border: 2px solid black; padding: 8px;">0.04 °</td>
+  </tr>
+  <tr>
+    <td style="border: 2px solid black; padding: 8px;">smallNet (sys7)</td>
+    <td style="border: 2px solid black; padding: 8px;">0.59 m</td>
+    <td style="border: 2px solid black; padding: 8px;">0.43 m</td>
+    <td style="border: 2px solid black; padding: 8px;">1.48 m</td>
+    <td style="border: 2px solid black; padding: 8px;">0.03 °</td>
+  </tr>
+</table>
+<br>
 
-The numerical results in terms of mean absulte error, circular error probability and CE95.
+The numerical results in terms of mean absolute error, circular error probability and CE95.
 
 For implementation details, check out more at my <a href="https://github.com/kenkyusha/cv_position" target="_blank">github page.</a>

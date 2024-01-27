@@ -2,8 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Machine Learning Engineer | Data Scientist | AI Generalist 
-
+subtitle: Machine Learning Engineer | Data Scientist | Founder
 profile:
   align: right
   image: profile.JPG
@@ -19,17 +18,16 @@ social: true  # includes social icons at the bottom of the page
 <h1>Abstractive Summary</h1>
 
 <p>
+    🔥 Co-founder & CTO  <a href="https://https://www.linkedin.com/company/muchbetter-ai/" rel="external nofollow noopener" target="_blank">muchbetter.ai</a> <br> 
+    👾 Sennder - Pricing algorithms and Recommendation Engine - Logistics<br>
+    👾 Ubisoft - Using LLMs for information retrieval and ranking (NLP) - Gaming<br>
+    👾 Fraunhofer - publications IPIN2018 (best paper), Sensors 2019 - Industry 5.0 <br>
+    🛠️ 8+ years of work experience in ML|DS|DL<br>
     🎓 MSc thesis in using Soft Decision Trees for classification (FAU)<br>
-    🛠️ 7+ years of work experience in ML|DS|DL<br>
-    🎭 Senior ML engineer, Lead engineer, Product Manager<br>
-    👾 Fraunhofer - publications IPIN2018 (best paper), Sensors 2019<br>
-    👾 Ubisoft - Using LLMs for information retrieval and ranking (NLP)<br>
-    👾 Sennder - Price Prediction Algorithm<br>
-    🚀 Carrier Focused Selling: pilot increasing sales over 25%<br>
     ⚙️ At least once per week you can find me: bouldering, skating, dancing<br>
 </p>
 
-<h1>How my journey began...</h1>
+<h1>Who am I? What got me here?</h1>
 
 <p> I first discovered the world of machine learning during my studies in Germany at the <a href="https://www.fau.eu">Friedrich-Alexander University</a>.
     I stumbled upon the ImageNet competition and was amazed by the winning work called GoogLeNet. 

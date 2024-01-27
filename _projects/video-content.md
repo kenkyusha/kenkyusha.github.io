@@ -4,6 +4,7 @@ layout: page
 permalink: /portfolio/work/video-content
 title: "Video-Image Content Understanding"
 img : "/assets/img/projects/vidcont/1.jpg"
+description: Engaged in a 2019 project for video-image content understanding, focused on filtering content for nudity and violence and optimizing ad targeting on a social media-like platform. Leveraged pjreddie's darknet and Yolov3 model for efficient object detection. Also tackled video-action detection, speech transcription, and automatic text summarization. Overcame challenges in limited research availability and parallel processing
 subtitle: #Things I've worked on.
 tags: mywork
 comments: True

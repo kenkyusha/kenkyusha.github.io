@@ -4,6 +4,7 @@ layout: page
 permalink: /portfolio/work/mlpos
 title: "CNN-based Position Estimation"
 img : "/assets/img/projects/mlpos/11.jpg"
+description: We improved high-precision positioning using Convolutional Neural Networks (CNN) for radio signal analysis. Achieved impressive results in challenging multipath scenarios, demonstrating the potential of machine learning for precise positioning. #MachineLearning #Positioning
 subtitle: #Things I've worked on.
 tags: mywork
 comments: True

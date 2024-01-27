@@ -4,6 +4,7 @@ layout: page
 permalink: /portfolio/work/eye-gaze
 title: "Human Eye-Gaze Tracking"
 img : "/assets/img/projects/gaze/eye-gaze.jpg"
+description: In 2020, I worked on a project involving human eye-gaze tracking using a laptop's camera. Leveraging appearance-based methods, I focused on extracting features from 2D images to predict gaze angles. The process involved image calibration, face detection, head pose estimation, and fitting a 3D face landmark model. Images of the eyes were normalized, combined into a 2-channel image, and fed into a model to predict gaze vectors (pitch and yaw). The system achieved impressive accuracy without person-specific calibration, offering stable and reliable eye-gaze tracking
 subtitle: #Things I've worked on.
 tags: mywork
 comments: True
@@ -56,12 +57,18 @@ The rest is using the estimated center of the eye and the predicted gaze vectors
 ## Performance
 In order to make the system more stable, I have done averaging over the facial landmark in order to keep the extracted images bit more stable, furthermore I am doing averaging over the predicted gaze vectors 
 
-<div style="text-align:center"><img src="/assets/img/projects/gaze/4.pdf" width="90%"/></div>
+<!-- <div style="text-align:center"><img src="/assets/img/projects/gaze/4.pdf" width="90%"/></div> -->
+<object data="/assets/img/projects/gaze/4.pdf" type="application/pdf" width="100%" height="500">
+  <p>Your browser does not support PDFs. <a href="/assets/img/projects/gaze/4.pdf">Download PDF</a> instead.</p>
+</object>
 <br>
 
 Here we can see the result of focusing 5 different points on the screen w.r.t. some metrics such as <a href="https://en.wikipedia.org/wiki/Mean_absolute_error" target="_blank">mean absolute error (MAE)</a>, CEP and CE95. Note that blinking is not filtered. 
 
-<div style="text-align:center"><img src="/assets/img/projects/gaze/5.pdf" width="90%"/></div>
+<!-- <div style="text-align:center"><img src="/assets/img/projects/gaze/5.pdf" width="90%"/></div> -->
+<object data="/assets/img/projects/gaze/5.pdf" type="application/pdf" width="100%" height="500">
+  <p>Your browser does not support PDFs. <a href="/assets/img/projects/gaze/5.pdf">Download PDF</a> instead.</p>
+</object>
 <br>
 
 In the figure above, we can see how the MAE changes according to the distance (i.e. we fix the distance). The graphs show the calculated MAE  w.r.t. each eye and if we would average them together over different distances. This plots gives us hints on what could be done in order to improve the model.
