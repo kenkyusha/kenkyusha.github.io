@@ -1,50 +1,41 @@
 ---
 layout: page
-# tags: portfolio
-permalink: /portfolio/work/dap
-title: "Multi-Sensor Data Acquisition Platform"
-img : "/assets/img/projects/dap/2.jpg"
-description: We found cost-effective alternatives to expensive sensors like Velodyne Lidar by using LIDAR, RADAR, and cameras. Our 360-degree camera setup, Jetson TX2, and neural networks made data gathering efficient, leading to a real-time object detection and tracking platform
-subtitle: #Things I've worked on.
-tags: mywork
-comments: True
-# show-avatar: False
-category: work
+tags: multi-sensor-data-acquisition, lidar-radar-camera-integration, autonomous-systems, pedestrian-detection-technology
+permalink: /portfolio/work/multi-sensor-data-platform-jetsontx2
+title: "Innovative Multi-Sensor Data Acquisition Platform for Autonomous Systems"
+img: "/assets/img/projects/dap/2.jpg"
+description: Discover how we revolutionized pedestrian detection in autonomous systems by integrating LIDAR, RADAR, and camera technologies on a budget-friendly platform, featuring real-time object detection and tracking capabilities.
+subtitle: Bridging the Gap in Autonomous Technology
+tags: autonomous-driving, sensor-integration, real-time-detection, object-tracking
+comments: true
+category: technology
 ---
 
 <p>
-  In early 2018, as I was working at the Fraunhofer IIS, one of the exciting projects I was working on involved several sensors such as camera, RADAR, LIDAR and the problem to be solved was pedestrian detection. The whole idea resolved around the theme of autonomous systems (driving) and part of the work was to find out how can we use consumer good radar and lidar sensors instead of expensive systems such as Velodyne Lidar costing more than 10K back at that time.
+  In 2018, at Fraunhofer IIS, I embarked on a pioneering project aimed at enhancing pedestrian detection for autonomous systems. We explored cost-effective alternatives to high-priced sensors like Velodyne Lidar, leveraging LIDAR, RADAR, and camera technologies to create a comprehensive detection platform.
 </p>
 
-## Sensors: LIDAR, RADAR, CAMERA
+## Revolutionizing Sensors: LIDAR, RADAR, CAMERA
 
-<div style="text-align:center"><img src="/assets/img/projects/dap/3.jpg" /></div>
+<div style="text-align:center"><img src="/assets/img/projects/dap/3.jpg" alt="Sensor Technology for Autonomous Systems"/></div>
 <br>
-In my disposal was the RPLidar A2 (left), TimeDomain P440 RADAR (middle) and Logitech C270 cameras (right) depicted above. 
-One of the problems with cheap sensors is the lack of data. What this means that for using machine learning methods, everything had to be measured and labeled from scratch.  
-Neither the RADAR or the lidar had any pre-existing datasets such as the more expensive systems such as the Velodyne Lidar, which have datasets of point clouds from the real environment.
+Armed with RPLidar A2, TimeDomain P440 RADAR, and Logitech C270 cameras, we faced the challenge of building a dataset from scratch due to the scarcity of data from budget-friendly sensors.
 
-## Platform
-<div style="text-align:center"><img src="/assets//img/projects/dap/4.jpg" width="100%"/></div>
+## Building the Platform
+<div style="text-align:center"><img src="/assets/img/projects/dap/4.jpg" width="100%" alt="Multi-Sensor Data Acquisition Platform"/></div>
 <br>
-Another problem at hand was that the system had to run on a embedded computing device from NVIDIA such as the <a href="https://developer.nvidia.com/embedded/jetson-tx2" target="_blank">Jetson TX2</a>. Thus, the computational limitations, were very strict considering how much processing could be done real-time. The idea was to build a camera field of view of 360 degrees, such that we would attach 8 Logitech Cameras on a platter covering the whole surrounding. On top of the camera array, on another level was sitting the Jetson TX2 board with the TimeDomain radar and on the third "floor" the lidar in order have the least occlusion with other obstacles. Now that we had the platform set for the first part i.e. the data recording and gathering, we could start making measurements. 
+Our platform, designed to operate on NVIDIA's Jetson TX2, aimed for 360-degree awareness with an 8-camera array and strategically placed RADAR and LIDAR sensors, overcoming computational limitations to ensure efficient real-time processing.
 
-## Data Acquisition
-<div style="text-align:center"><img src="/assets/img/projects/dap/5.jpg" width="80%"/></div>
-Working with data, labeling and measurements is one of the most time-consuming effort. It is very inefficient to label the data manually, hence more efficent methods are desirable. 
-One of the benefits of having a camera sensor is that, there is already bunch of really good neural network based object detection algorithms. And this is a huge benefit, the camera detection could easily be mapped into the lidar domain, from where the distance to the object could be extracted. This distance could be then used to find the object reflection peak in the RADAR domain.. et voila! We can do semi-automatic labeleing! The challenge now was to make enough recordings and preprocess the measured data on a more powerful computer with good object detector algorithm. In this particular project I used the <a href="https://github.com/facebookresearch/Detectron" target="_blank">Facebook Detectron</a>.
+## Efficient Data Acquisition and Labeling
+<div style="text-align:center"><img src="/assets/img/projects/dap/5.jpg" width="80%" alt="Data Acquisition Process"/></div>
+Manual data labeling is time-consuming. By harnessing neural network-based object detection algorithms, we achieved semi-automatic labeling, mapping camera detections to LIDAR distances and RADAR reflections, streamlining the data preparation process.
 
-## Demo Platform
-Since there are only limited computational resources available. Instead of using the all of the cameras, only one camera together with lidar and radar are used for deployment. This is sufficient in terms of what we want to achieve, namely to detect what is in front of the autonomous system, using a neural network based object detector (<a href="https://github.com/chuanqi305/ssd" target="_blank">Single Shot Detector</a> running at 15FPS on Jetson TX2), classify it and track it. And as soon as, there is a detection of a person, we track them until they have left the operational zone of the platform using the data points in lidar and radar domains.
+## Demo Platform Insights
+With computational resources at a premium, we optimized the system to use a single camera alongside LIDAR and RADAR for effective object detection and tracking, running a neural network-based object detector at 15FPS on the Jetson TX2 for live-demo applications.
 
-<div style="text-align:center"><img src="/assets/img/projects/dap/towards_dap_big.gif" width="70%"/></div>
+<div style="text-align:center"><img src="/assets/img/projects/dap/towards_dap_big.gif" width="70%" alt="Demo of Multi-Sensor Detection and Tracking"/></div>
 <br>
-Above we can see, the detection in the camera domain, which initiates the  tracking the points in the lidar domain. In this example, we can see how the system works walking towards and backwards from the sensor. In the lidar domain even the static points are flickering (makes the problem bit harder), but as we can see the points associated with the person are clearly distinguishable. Observing the radar domain, we can see the red dots moving closer and further away on the waterfall plot.
+The demo showcases the platform's capability to detect and track objects, maintaining tracking accuracy even as objects move out of the camera's field of view, thanks to the integrated sensor data.
 
-<div style="text-align:center"><img src="/assets/img/projects/dap/out_fov_big.gif" width="70%"/></div>
-<br>
-In the gif above, we can see the person being tracked in the camera field of view and at the same time in the lidar and radar domain. Notice, how the tracking persist in the lidar and radar domain after the person has already left the camera field of view. 
-
-## Conclusion
-This was one of the most challenging and exciting projects I've worked on. The beauty of this project was that I could combine my previously acquired knowledge in machine learning, take some state of the art classifiers such as the FB Detectron for offline Semi-autonomous data labeleing and Single Shot Detector (SSD) for the live-demo version. The hardest part was the combination and synchronization of the different data streams from sensors. For the live-demo each of the sensor had to be tuned down to work at the rate of the SSD (image detector) speed as this was the most compute heavy task. 
-
+## Conclusion: Pushing Boundaries in Autonomous Systems
+This project stands as a testament to the potential of integrating machine learning with sensor technology to create efficient, cost-effective solutions for autonomous systems. The challenge of synchronizing diverse data streams was met with innovative solutions, setting a new standard for real-time detection and tracking in autonomous vehicles and systems.

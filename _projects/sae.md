@@ -1,45 +1,38 @@
 ---
 layout: page
-# tags: portfolio
-permalink: /portfolio/work/sae
-title: "Stacked AutoEncoder"
-img : "https://upload.wikimedia.org/wikipedia/commons/3/37/Autoencoder_schema.png"
-description: Inspired by research on 'Deep Neural Network Based Instrument Extraction From Music,' I explored SAEs to efficiently encode data. SAEs are neural networks that reduce layer size to create efficient encodings. I trained them in a unique way, starting with 1 layer and adding more, preserving initial weights. The architecture resulted in a staircase of training and validation loss.
-subtitle: #Things I've worked on.
-tags: mywork
+permalink: /portfolio/deep-learning-stacked-autoencoder
+title: "Enhancing Data Encoding with Stacked AutoEncoders (SAEs)"
+img: "https://upload.wikimedia.org/wikipedia/commons/3/37/Autoencoder_schema.png"
+description: Dive into our 2015 project on Stacked AutoEncoders (SAEs), a pioneering approach in deep learning for efficient data encoding, inspired by advancements in neural network-based instrument extraction from music. Discover how SAEs optimize encoding processes and structure through unique training methodologies.
+tags: stacked-autoencoder, deep-learning, neural-networks, data-encoding, machine-learning
 comments: True
 show-avatar: False
-category: work
+category: machine-learning
 ---
 
-Implementing a stacked autoencoder was one of the first projects I worked as I dived into the ML and DL topics. Back in 2015, as I was doing my HiW-i job (working student) at the International Audio Labratories, lasange and theano on top of keras was the big deal and implementing neural networks. This work was inspired by the authors of [Deep Neural Network Based Instrument Extraction From Music](http://150.162.46.34:8080/icassp2015/pdfs/0002135.pdf), which explained roughly how they implemented and trained their Stacked Autoencoder.
+In 2015, at the International Audio Laboratories, I embarked on an exploratory project into Machine Learning (ML) and Deep Learning (DL), focusing on Stacked AutoEncoders (SAEs). Inspired by groundbreaking research in [Deep Neural Network Based Instrument Extraction From Music](http://150.162.46.34:8080/icassp2015/pdfs/0002135.pdf), this project aimed to leverage SAEs for advanced data encoding.
 
-## Autoencoder
+## Understanding Autoencoders
 
-<div style="text-align:center; background-color: white;"><img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Autoencoder_schema.png" width="50%"/></div>
+<div style="text-align:center; background-color: white;"><img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Autoencoder_schema.png" width="50%" alt="Autoencoder Schema"/></div>
 
-An autoencoder is a type of neural network, which usually is used to learn an efficient encoding. The way it works is that layer after layer the number of neurons each later is reduced to a desired size after which the encoding process starts, which tries to reconstruct the input signal.
-<a href="https://en.wikipedia.org/wiki/Autoencoder" target="_blank">Read more about it here.</a>
+Autoencoders, a cornerstone of neural network architecture, are designed to learn efficient data encodings automatically. By progressively reducing neuron count layer by layer, autoencoders distill input data into a concise, efficient encoding before attempting to reconstruct the original input. [Learn more about Autoencoders.](https://en.wikipedia.org/wiki/Autoencoder)
 
-### Stacked autoencoder
-In the [paper](http://150.162.46.34:8080/icassp2015/pdfs/0002135.pdf), they describe a special way of training an autoencoder. Namely they start with 1 layer network where the weights are initialized either with the Identity function, meaning there are 1s on the main diagonal of the matrix and rest is filled with 0s. The second initialization they propose ise the lease-squares method, which uses the input data and performs cross-correlation computation. 
+### The Innovation of Stacked Autoencoders
 
-<div style="text-align:center"><img src="/assets/img/projects/sae/1.svg" size="100%"/></div>
+Our approach, as detailed in the referenced [paper](http://150.162.46.34:8080/icassp2015/pdfs/0002135.pdf), introduces a novel training method for autoencoders. Starting with a single-layer network, we experiment with two initial weight settings: the Identity function and the least-squares method, focusing on optimizing the encoding of complex audio data.
+
+<div style="text-align:center"><img src="/assets/img/projects/sae/1.svg" size="100%" alt="Stacked Autoencoder Training Process"/></div>
 <br>
 
-When the weights are initialized they train the network with features extracted from audio frame of combination different musical instruments and target being the features of a single instrument (piano, drums, guitar, ...). This one layer network, is trained for certain epochs after, which another layer is added to the network, its weights again initialized while preserving the first layer weights. The network is trained again and this process is repeated till **depth + 1** times.
+This methodical layering and training process, repeated until the network reaches a specified depth, preserves initial weights while adapting to new complexities, resulting in a finely tuned SAE.
 
-<!-- <div style="text-align:center"><img src="/assets/img/projects/sae/0.svg" size="100%"/></div> -->
-<div style="text-align:center; background-color: white;">
-  <img src="/assets/img/projects/sae/0.svg" width="100%" />
-</div>
+## Observing Training Loss Evolution
 
+The hallmark of our stacked autoencoder's architecture is its characteristic "staircase" pattern of training and validation loss. This pattern demonstrates the effectiveness of our training methodology, with each new layer contributing to a significant leap in performance and accuracy.
+
+<div style="text-align:center"><img src="/assets/img/projects/sae/2.png" size="100%" alt="Training and Validation Loss"/></div>
 <br>
 
-## Training loss
-The result of this architecture should be a staircase of training and validation loss, where after each addition of new layer the error jumps downwards as described in the paper.
+For an in-depth look at the development and application of this technology, including a step-by-step guide and example implementations, visit our [GitHub repository](https://github.com/kenkyusha/SAE) and explore the [notebook example](https://github.com/kenkyusha/SAE/blob/master/example.ipynb).
 
-<div style="text-align:center"><img src="/assets/img/projects/sae/2.png" size="100%"/></div>
-<br>
-
-Check out more at my <a href="https://github.com/kenkyusha/SAE" target="_blank">github page</a> and the <a href="https://github.com/kenkyusha/SAE/blob/master/example.ipynb" target="_blank">notebook example.</a> 

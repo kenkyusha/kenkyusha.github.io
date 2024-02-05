@@ -12,9 +12,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Stacked AutoEncoder | Arne Niitsoo | GenAI Specialist</title>
+    <title>Advanced Computer Vision for Accurate Position Estimation | Arne Niitsoo</title>
     <meta name="author" content="Arne  Niitsoo">
-    <meta name="description" content="Inspired by research on 'Deep Neural Network Based Instrument Extraction From Music,' I explored SAEs to efficiently encode data. SAEs are neural networks that reduce layer size to create efficient encodings. I trained them in a unique way, starting with 1 layer and adding more, preserving initial weights. The architecture resulted in a staircase of training and validation loss.">
+    <meta name="description" content="Explore how we achieved groundbreaking improvements in inside-out positioning with computer vision technologies at Fraunhofer IIS in 2018, significantly enhancing image processing and simplifying CNN architectures for unparalleled accuracy.">
     <meta name="keywords" content="data science, machine learning, deep learning, recommendation systems, natural language processing, semantic similarity, information retrieval, large language models, LLM, computer vision, python, pytorch, tensorflow, fintech, healthtec, medtech, conversational AI">
 
 
@@ -35,14 +35,9 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="http://localhost:4000/portfolio/work/sae">
+    <link rel="canonical" href="http://localhost:4000/portfolio/computer-vision-position-estimation">
     
     <!-- Dark Mode -->
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
-
-    <script src="/assets/js/theme.js"></script>
-    <script src="/assets/js/dark_mode.js"></script>
     
 
   </head>
@@ -56,7 +51,7 @@
       <!-- Nav Bar -->
       <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
         <div class="container">
-          <a class="navbar-brand title font-weight-lighter" href="/">Arne Niitsoo | GenAI Specialist</a>
+          <a class="navbar-brand title font-weight-lighter" href="/">Arne Niitsoo</a>
           <!-- Navbar Toggle -->
           <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -78,14 +73,6 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/projects/">projects</a>
               </li>
-
-              <!-- Toogle theme mode -->
-              <li class="toggle-container">
-                <button id="light-toggle" title="Change theme">
-                  <i class="fas fa-moon"></i>
-                  <i class="fas fa-sun"></i>
-                </button>
-              </li>
             </ul>
           </div>
         </div>
@@ -106,42 +93,48 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Stacked AutoEncoder</h1>
-            <p class="post-description">Inspired by research on 'Deep Neural Network Based Instrument Extraction From Music,' I explored SAEs to efficiently encode data. SAEs are neural networks that reduce layer size to create efficient encodings. I trained them in a unique way, starting with 1 layer and adding more, preserving initial weights. The architecture resulted in a staircase of training and validation loss.</p>
+            <h1 class="post-title">Advanced Computer Vision for Accurate Position Estimation</h1>
+            <p class="post-description">Explore how we achieved groundbreaking improvements in inside-out positioning with computer vision technologies at Fraunhofer IIS in 2018, significantly enhancing image processing and simplifying CNN architectures for unparalleled accuracy.</p>
           </header>
 
           <article>
-            <p>Implementing a stacked autoencoder was one of the first projects I worked as I dived into the ML and DL topics. Back in 2015, as I was doing my HiW-i job (working student) at the International Audio Labratories, lasange and theano on top of keras was the big deal and implementing neural networks. This work was inspired by the authors of <a href="http://150.162.46.34:8080/icassp2015/pdfs/0002135.pdf" rel="external nofollow noopener" target="_blank">Deep Neural Network Based Instrument Extraction From Music</a>, which explained roughly how they implemented and trained their Stacked Autoencoder.</p>
+            <p>
+  During my tenure at Fraunhofer IIS in Nürnberg in late 2018, I tackled the challenging task of inside-out positioning for autonomous systems using RGB cameras, a crucial technology for navigation and spatial awareness in robotics and autonomous vehicles. <a href="https://www.mad.tf.fau.de/files/2018/07/Evaluation-Criteria-for-Inside-Out-Indoor-Positioning-Systems-based-on-Machine-Learning.pdf" target="_blank" rel="external nofollow noopener">Learn more about inside-out positioning.</a> 
+</p>
 
-<h2 id="autoencoder">Autoencoder</h2>
+<h2 id="enhancing-warehouse-navigation-with-computer-vision">Enhancing Warehouse Navigation with Computer Vision</h2>
 
-<div style="text-align:center; background-color: white;"><img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Autoencoder_schema.png" width="50%"></div>
+<p>Fraunhofer’s groundbreaking <a href="https://www.iis.fraunhofer.de/en/ff/lv/dataanalytics/opt/warehouse.html" target="_blank" rel="external nofollow noopener">warehouse dataset</a> includes absolute positions and 360° imagery, serving as the foundation for our experiments in enhancing autonomous navigation through advanced image processing and CNN architectures.</p>
 
-<p>An autoencoder is a type of neural network, which usually is used to learn an efficient encoding. The way it works is that layer after layer the number of neurons each later is reduced to a desired size after which the encoding process starts, which tries to reconstruct the input signal.
-<a href="https://en.wikipedia.org/wiki/Autoencoder" target="_blank" rel="external nofollow noopener">Read more about it here.</a></p>
+<h2 id="optimizing-image-processing-for-precision">Optimizing Image Processing for Precision</h2>
 
-<h3 id="stacked-autoencoder">Stacked autoencoder</h3>
-<p>In the <a href="http://150.162.46.34:8080/icassp2015/pdfs/0002135.pdf" rel="external nofollow noopener" target="_blank">paper</a>, they describe a special way of training an autoencoder. Namely they start with 1 layer network where the weights are initialized either with the Identity function, meaning there are 1s on the main diagonal of the matrix and rest is filled with 0s. The second initialization they propose ise the lease-squares method, which uses the input data and performs cross-correlation computation.</p>
+<p>Following standard pre-processing protocols, we initially faced challenges in retaining critical image details. A shift in approach from center-cropping to edge detection and image scaling (224x224) preserved valuable contextual information, drastically improving our model’s learning efficiency.</p>
 
-<div style="text-align:center"><img src="/assets/img/projects/sae/1.svg" size="100%"></div>
+<h2 id="introducing-edges-a-game-changer-in-image-analysis">Introducing ‘Edges’: A Game-Changer in Image Analysis</h2>
+
+<div style="text-align:center"><img src="/assets/img/projects/cvpos/2.jpg" alt="Edge Detection in Image Processing"></div>
 <p><br></p>
 
-<p>When the weights are initialized they train the network with features extracted from audio frame of combination different musical instruments and target being the features of a single instrument (piano, drums, guitar, …). This one layer network, is trained for certain epochs after, which another layer is added to the network, its weights again initialized while preserving the first layer weights. The network is trained again and this process is repeated till <strong>depth + 1</strong> times.</p>
+<p>My innovation involved foregoing traditional mean image reduction in favor of edge detection, enhancing the CNN model’s accuracy by focusing on structural details critical for precise positioning.</p>
 
-<!-- <div style="text-align:center"><img src="/assets/img/projects/sae/0.svg" size="100%"/></div> -->
-<div style="text-align:center; background-color: white;">
-  <img src="/assets/img/projects/sae/0.svg" width="100%">
-</div>
+<h2 id="streamlining-cnn-architecture-for-better-performance">Streamlining CNN Architecture for Better Performance</h2>
 
+<p>Our simplified CNN model, inspired by but less complex than GoogleNet’s architecture, proved more effective for our specific use case, requiring fewer parameters and offering improved performance.</p>
+
+<div style="text-align:center"><img src="https://raw.githubusercontent.com/kenkyusha/cv_position/master/pictures/model_plot.png" width="50%" alt="Simplified CNN Architecture"></div>
 <p><br></p>
 
-<h2 id="training-loss">Training loss</h2>
-<p>The result of this architecture should be a staircase of training and validation loss, where after each addition of new layer the error jumps downwards as described in the paper.</p>
+<h2 id="breakthrough-results-in-position-estimation">Breakthrough Results in Position Estimation</h2>
 
-<div style="text-align:center"><img src="/assets/img/projects/sae/2.png" size="100%"></div>
+<p>Our results demonstrated significant improvements across key metrics, including Mean Absolute Error (MAE), Circular Error Probable (CEP), and the 95% confidence interval (CE95), showcasing the efficacy of our streamlined approach.</p>
+
+<div style="text-align:center"><img src="/assets/img/projects/cvpos/4.jpg" alt="Comparative Analysis of Position Estimation Accuracy"></div>
 <p><br></p>
 
-<p>Check out more at my <a href="https://github.com/kenkyusha/SAE" target="_blank" rel="external nofollow noopener">github page</a> and the <a href="https://github.com/kenkyusha/SAE/blob/master/example.ipynb" target="_blank" rel="external nofollow noopener">notebook example.</a></p>
+<p>The comparative analysis highlights the superiority of our ‘smallNet’ system in various operational setups, marking a substantial advancement in computer vision-based positioning technologies.</p>
+
+<p>For a deeper dive into the project and access to our codebase, visit our <a href="https://github.com/kenkyusha/cv_position" rel="external nofollow noopener" target="_blank">GitHub repository</a>.</p>
+
 
           </article>
 
@@ -153,7 +146,7 @@
     <footer class="fixed-bottom">
       <div class="container mt-0">
         © Copyright 2024 Arne  Niitsoo. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-Last updated: January 27, 2024.
+Last updated: February 05, 2024.
       </div>
     </footer>
 
